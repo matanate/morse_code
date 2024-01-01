@@ -39,15 +39,15 @@ The encryption and decryption dictionaries are predefined, mapping characters to
 
 ### Encrypting a String
 
-Enter 'e' to encrypt, 'd' to decrypt, or 'q' to quit: e  
+Enter 'd' to decrypt, 'e' to encrypt, or 'q' to quit: e
 Enter a string you would like to encrypt: Hello World  
-The encrypted string is: .... . .-.. .-.. --- .-- --- .-. .-.. -..
+The encrypted string is: .... . .-.. .-.. --- / .-- --- .-. .-.. -..
 
 ### Decrypting Morse Code
 
-Enter 'e' to encrypt, 'd' to decrypt, or 'q' to quit: d  
-Enter a string you would like to decrypt: .... . .-.. .- .-.. -.. -.-- -.-- -.-- -... .- -.-.  
-The decrypted string is: HAPPY HAPPY HAPPY BACK
+Enter 'd' to decrypt, 'e' to encrypt, or 'q' to quit: d  
+Enter a string you would like to decrypt: .... .- .--. .--. -.-- / .... .- .--. .--. -.-- / .... .- .--. .--. -.-- / -... .- -.-. -.-  
+The decrypted string is: happy happy happy back
 
 ## Dependencies
 
