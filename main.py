@@ -1,3 +1,4 @@
+# Import necessary modules
 from art import title_art
 from dictionaries import DECRYPT_DICT, ENCRYPT_DICT
 import sys
@@ -7,8 +8,8 @@ import sys
 def encrypt(input_str):
     # Initiate a string of the first character encryption
     result = ENCRYPT_DICT[input_str[0]]
+    # Iterate over the remaining characters, adding space and encryption for each
     for char in input_str[1:]:
-        # adds a space followed by encryption for each character.
         result += f" {ENCRYPT_DICT[char]}"
 
     return result
@@ -19,7 +20,7 @@ def decrypt(input_str):
     # Initiate an empty string
     result = ""
     for char in input_str.split():
-        # check for an '/' character that represent a space.
+        # check for a '/' character that represent a space.
         if char != "/":
             result += f"{DECRYPT_DICT[char]}"
         else:
@@ -28,8 +29,7 @@ def decrypt(input_str):
 
 
 # Function to prompt the user for a string to encrypt/decrypt.
-# The function receives a function decrypt/encrypt.
-# And prints the result
+# The function receives a function decrypt/encrypt and prints the result
 def string_process(activation_func):
     # Catch exceptions where invalid strings were entered.
     try:
@@ -45,9 +45,11 @@ def string_process(activation_func):
             print(
                 "Invalid character was used\nValid characters: numbers, letters, space, ',', '.', '?', '/', '-', '(', ')'"
             )
+        # Recursively call the function to handle the exception and prompt again
         string_process(activation_func)
 
 
+# Main function
 def main():
     # Print program title
     print(title_art)
@@ -74,5 +76,6 @@ def main():
         main()
 
 
+# Entry point of the program
 if __name__ == "__main__":
     main()
