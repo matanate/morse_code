@@ -19,6 +19,7 @@ def encrypt(input_str):
 def decrypt(input_str):
     # Initiate an empty string
     result = ""
+    # Iterate over each substring separated by spaces.
     for char in input_str.split():
         # check for a '/' character that represent a space.
         if char != "/":
