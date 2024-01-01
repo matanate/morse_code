@@ -2,7 +2,8 @@
 
 ## Overview
 
-This Python program allows users to encrypt and decrypt strings using a dictionary-based approach for Morse code. The encryption and decryption dictionaries are predefined, mapping characters to their Morse code equivalents.
+This Python program allows users to encrypt and decrypt strings using a dictionary-based approach for Morse code.  
+The encryption and decryption dictionaries are predefined, mapping characters to their Morse code equivalents.
 
 ## Features
 
@@ -38,14 +39,14 @@ This Python program allows users to encrypt and decrypt strings using a dictiona
 
 ### Encrypting a String
 
-Enter 'e' to encrypt, 'd' to decrypt, or 'q' to quit: e
-Enter a string you would like to encrypt: Hello World
+Enter 'e' to encrypt, 'd' to decrypt, or 'q' to quit: e  
+Enter a string you would like to encrypt: Hello World  
 The encrypted string is: .... . .-.. .-.. --- .-- --- .-. .-.. -..
 
 ### Decrypting Morse Code
 
-Enter 'e' to encrypt, 'd' to decrypt, or 'q' to quit: d
-Enter a string you would like to decrypt: .... . .-.. .- .-.. -.. -.-- -.-- -.-- -... .- -.-.
+Enter 'e' to encrypt, 'd' to decrypt, or 'q' to quit: d  
+Enter a string you would like to decrypt: .... . .-.. .- .-.. -.. -.-- -.-- -.-- -... .- -.-.  
 The decrypted string is: HAPPY HAPPY HAPPY BACK
 
 ## Dependencies
