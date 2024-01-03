@@ -5,7 +5,7 @@ import sys
 
 
 # Function to encrypt the string
-def encrypt(input_str):
+def encrypt(input_str: str) -> str:
     """
     Encrypts the input string using a predefined encryption dictionary.
 
@@ -25,7 +25,7 @@ def encrypt(input_str):
 
 
 # Function to decrypt the string
-def decrypt(input_str):
+def decrypt(input_str: str) -> str:
     """
     Decrypts the input string using a predefined decryption dictionary.
 
@@ -49,7 +49,7 @@ def decrypt(input_str):
 
 # Function to prompt the user for a string to encrypt/decrypt.
 # The function receives a function decrypt/encrypt and prints the result
-def string_process(activation_func):
+def string_process(activation_func: function) -> None:
     """
     Prompts the user for a string, applies the specified activation function,
     and prints the result. Handles invalid input and prompts the user recursively.
