@@ -2,6 +2,7 @@
 from art import title_art
 from dictionaries import DECRYPT_DICT, ENCRYPT_DICT
 import sys
+from typing import Callable
 
 
 # Function to encrypt the string
@@ -49,7 +50,7 @@ def decrypt(input_str: str) -> str:
 
 # Function to prompt the user for a string to encrypt/decrypt.
 # The function receives a function decrypt/encrypt and prints the result
-def string_process(activation_func: function) -> None:
+def string_process(activation_func: Callable) -> None:
     """
     Prompts the user for a string, applies the specified activation function,
     and prints the result. Handles invalid input and prompts the user recursively.
