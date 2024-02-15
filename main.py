@@ -2,6 +2,7 @@
 from art import title_art
 from dictionaries import DECRYPT_DICT, ENCRYPT_DICT
 import sys
+import os
 from typing import Callable
 
 
@@ -86,6 +87,12 @@ def string_process(activation_func: Callable) -> None:
         string_process(activation_func)
 
 
+def clear_terminal():
+    """
+    Clears the terminal."""
+    os.system("cls" if os.name == "nt" else "clear")
+
+
 # Main function
 def main():
     """
@@ -121,6 +128,7 @@ def main():
         input("Enter 'y' to encrypt/decrypt another string or 'n' to quit: ").lower()
         == "y"
     ):
+        clear_terminal()
         main()
 
 
